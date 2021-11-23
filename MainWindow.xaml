@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestAsyncAwaitTiming"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="400">
+        Title="MainWindow" Width="400" SizeToContent="Height" ResizeMode="NoResize">
     <StackPanel>
-        <Button Content="シンプルな await" Click="ButtonSimple_Click" />
-        <Button Content="関数内で await する場合" Click="ButtonAwait_Click" />
-        <Button Content="関数内で await と Sleep する場合" Click="ButtonAwaitSleep_Click" />
+        <Button Content="シンプルに await する場合" Click="ButtonSimple_Click" />
+        <Button Content="「内部で await している関数」を呼びだす場合" Click="ButtonAwait_Click" />
+        <Button Content="「内部で await と Sleep している関数」を呼びだす場合" Click="ButtonAwaitSleep_Click" />
+        <Button Content="「内部で Sleep と await している関数」を呼びだす場合" Click="ButtonSleepAwait_Click" />
     </StackPanel>
 </Window>
