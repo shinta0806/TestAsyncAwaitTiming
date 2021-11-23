@@ -9,5 +9,6 @@
     <StackPanel>
         <Button Content="シンプルな await" Click="ButtonSimple_Click" />
         <Button Content="関数内で await する場合" Click="ButtonAwait_Click" />
+        <Button Content="関数内で await と Sleep する場合" Click="ButtonAwaitSleep_Click" />
     </StackPanel>
 </Window>
